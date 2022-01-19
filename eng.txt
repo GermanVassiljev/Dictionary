@@ -4,3 +4,7 @@ Car
 Light
 Night
 Nightmare
+God
+Dog
+Cat
+Robot
