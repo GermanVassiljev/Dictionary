@@ -42,19 +42,22 @@ def Translation(l1:list,l2:list):
         print(word+"-"+tolk)
     else:
         print("Not found")
-def English_Test(l1:list,l2:list,a:str):
+def Test(l1:list,l2:list,a:str):
     """
     """
     l=[]
     q=0
     Point=0
-    while q<=10:
+    while True:
         q+=1
+        if q==10:
+            break
         c=Random_Word(l1)
         while l1.count(c)==1:
             c=Random_Word(l1)
         l.append(c)
-        print(Random_Word(l1))
+        print(c)
+        print("Write translate")
         Answer=Ask_Input(a)
         if l1.index(c)==l2.index(Answer):
             print("Right!")
@@ -63,3 +66,4 @@ def English_Test(l1:list,l2:list,a:str):
             print("Wrong!")
     P=10/Point*100
     print("Your check is"+P)
+    return P
