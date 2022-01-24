@@ -33,6 +33,6 @@ while True:
         Word2=Ask_Input(a)
         New_Word("rus.txt",Word2,rus)
     elif Answer.lower()=="check english":
-        True
+        Test(eng,rus,a)
     elif Answer.lower()=="check russian":
-        True
+        Test(rus,eng,a)
